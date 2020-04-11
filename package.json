@@ -1,0 +1,19 @@
+{
+  "name": "node-word-guess",
+  "version": "1.0.0",
+  "description": "",
+  "main": "guess.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bgreen53/Node-Word-Guess.git"
+  },
+  "author": "Barry Green\u001b[A\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[A\u001b[A\u001b[A\u001b[A\u001b[C\u001b[C\u001b[C\u001b[CCommand line guessing game\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bgreen53/Node-Word-Guess/issues"
+  },
+  "homepage": "https://github.com/bgreen53/Node-Word-Guess#readme"
+}
