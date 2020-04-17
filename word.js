@@ -1,20 +1,26 @@
-var letter= require("./letter.js")
+var Letter= require("./letter.js")
 
-  function checkLetters(letter) {
-    var letterInWord = false;
-    
-    for (var i = 0; i < blanks; i++) {
-        if (word[i] == letter) {
-            letterInWord = true;
+var Word = function(letArr){
+    this.letArr = letArr
+    this.word = []
+    this.makeWord= function(){
+        for(var i=0;i<letArr.length;i++){
+            var wordLet = new Letter(letArr[i])
+            this.word.push(wordLet)
         }
     }
-    
-    if (letterInWord) {
-        for (var i = 0; i < blanks; i++) {
-            if (word[i] == letter) {
-                blanksText[i] = letter;
-            }
-           
+    this.showWord = function() {
+        var wordDisplay = [];
+        for (var i=0; i<this.word.length; i++) {
+            wordDisplay.push(this.word[i].display());
+        }
+        return wordDisplay.join(" ");
+    }
+    this.checkGuess = function(myGuess) {
+        for (var i=0; i<this.word.length; i++) {
+            this.word[i].checkLet(myGuess);
         }
     }
-    
+}
+
+module.exports = Word;

@@ -4,16 +4,16 @@ var Letter = function (alpha) {
   this.word = ""
   this.guessed = false
   this.display = function () {
-    for (var i = 0; i < this.word.length; i++) {
-      if (this.alpha === " ") {
-        return " "
-      } else if (this.guessed) {
-        return this.alpha
-      } else {
-        return "_"
-      }
-
-    }
+    if (this.alpha === " ") {
+      return " ";
+  }
+  else if(!this.guessed) {
+      return "_";
+  }
+  else {
+      return this.alpha;
+  }
+    
   };
   this.checkLet= function(userGuess){
     if(userGuess===this.alpha){
@@ -22,7 +22,7 @@ var Letter = function (alpha) {
   }
 }
 
-
+module.exports= Letter;
 
 
 
